@@ -1,0 +1,103 @@
+>> LOGIN SESSION <<
+
+-------------------
+
+
+== 1. Sebagai Tata Usaha ==
+
+//-------------------
+
+username : abdullah
+
+password : cimada
+
+-------------------//
+
+//-------------------
+
+username : kartono
+
+password : tono_senju
+
+-------------------//
+
+//-------------------
+
+username : didi_p
+
+password : songhopur
+
+-------------------//
+
+//-------------------
+
+username : admin
+
+password : admin
+
+-------------------//
+
+
+##
+
+
+== 2. Sebagai Guru == 
+
+//-------------------
+
+username : [NIP]
+
+password : [NIP]
+
+contoh: {Note : [...] => Lihat data}
+username=> 2015070676
+password=> 2015070676
+
+-------------------//
+
+
+== 3. Sebagai Siswa == 
+
+//-------------------
+
+username : [NIS]
+
+password : [NIS]
+
+contoh: {Note : [...] => Lihat data}
+username=> 15162
+password=> 15162
+
+-------------------//
+
+
+
+### Sistem Algoritma:
+TATA_USAHA(admin) => Hak Akses Penuh mencangkup (CRUD):
+	atur data siswa,guru,mata pelajaran,kelas,kelas paralel,
+	pembagian kelas untuk siswa, dan pembagian pengajar di tiap-tiap kelas,
+	Cetak Nilai.
+
+GURU => Hak Akses mencangkup:
+	Lihat maupun edit data pribadinya,
+	Lihat data siswa, dan Memberikan Penilaian Kepada Siswa yang ada dikelas yang diajarnya.
+
+SISWA => Hak Akses mencangkup :
+	Lihat maupun edit data pribadinya,
+	Lihat Nilai.
+
+
+//END
+
+
+#####################################################################
+&								    &
+*	CREATE By: Team ABDINO (Abdullah Didi_Purnomo Kartono)	    *
+*	@STT PELITA BANGSA 2015/2016 TI.13.D.1			    *
+&								    &
+#####################################################################
+
+	
+
+
+

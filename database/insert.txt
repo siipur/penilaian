@@ -1,0 +1,58 @@
+INSERT INTO tbl_siswa 
+(nis,nisn,password,nama_murid,jenis_kelamin,tmp_lahir,tgl_lahir,agama,alamat,telepon,ortu_nama,tanggal_edit,img_siswa)
+VALUES
+('15160','1516062001','15160','Didi Purnomo','Laki-laki','Brebes','1994-01-06','Islam','Desa Terlangu Kec.Brebes Kab.Brebes','089619323616','Zaenal Saleh','2010-11-06','foto.jpg'),
+('15161','1516162001','15161','Syifa Arum Dewanti','Perempuan','Tegal','1996-04-04','Islam','Desa Bojong Kec.Talang Kab.Tegal','085710323676','Aris','2010-11-07','tengik.jpg');
+
+-- Dumping data for table `tbl_guru` --
+INSERT INTO tbl_guru 
+(nip,nuptk,password,nama_guru,jenis_kelamin,tmp_lahir,tgl_lahir,agama,alamat,telepon,tanggal_edit,img_guru)
+VALUES
+('19671201','19671201005','19671201','Yudhi, S.Kom','Laki-laki','Bekasi','1947-01-06','Islam','Desa Telaga Asih Kec.Cikarang Kab.Bekasi','089619323616','Zaenal Saleh','2010-11-06','foto.jpg'),
+('19671202','19701102005','19671202','Mega Dewi','Perempuan','Tegal','1945-04-04','Islam','Desa Bojong Kec.Talang Kab.Tegal','085710323676','Aris','2010-11-07','tengik.jpg');
+
+
+-- Dumping data for table `tbl_th_ajaran` --
+INSERT INTO tbl_th_ajaran (id_th_ajaran,tahun_ajaran) VALUES
+(1,'2011'),(2,'2012'),(3,'2013'),(4,'2014'),(5,'2015'),(6,'2016');
+
+-- Dumping data for table `tbl_kelas` --
+INSERT INTO tbl_kelas (id_kelas,tingkat_kelas,kapasitas) VALUES
+('k1','X','30'),('k2','XI','30'),('k2','XI','30');
+
+-- Dumping data for table `tbl_kelas_paralel` --
+INSERT INTO tbl_kelas_paralel (id_paralel,nama_paralel) VALUES
+('p1','A'),('p2','B'),('p3','C'),('p4','D');
+
+-- Dumping data for table `tbl_matpel` --
+INSERT INTO tbl_matpel (id_matpel,nama_matpel,jenis_matpel) VALUES
+('m01','IPA','ilmu alam'),('m02','IPS','ilmu sosial'),('m03','MTK','logika'),
+('m04','Bahasa Indonesia','bahasa'),('m05','Bahasa Ingrris','bahasa');
+
+-- Dumping data for table `tbl_nilai` --
+INSERT INTO tbl_nilai 
+(id_nilai,id_matpel,nis,id_th_ajaran,id_kelas,id_paralel,semester,jenis_nilai,nilai) 
+VALUES
+('n1','m03','15160','5','k2','p1','4','A','99'),
+('n2','m01','15161','5','k1','p3','2','C','50');
+
+-- Dumping data for table `tbl_nilai` --
+INSERT INTO tbl_wali_kelas 
+(id_guru_kelas,id_th_ajaran,id_kelas,id_paralel,nip) 
+VALUES
+('gk1','5','k2','p1','19671202'),
+('gk2','5','k1','p3','19671201');
+
+-- Dumping data for table `tbl_nilai` --
+INSERT INTO tbl_matpel_kelas
+(id_matpel_kelas,id_kelas,id_matpel) 
+VALUES
+('mk1','k2','k2','p1','m03'),
+('mk2','k1','k1','p3','m01');
+
+INSERT INTO `users` (`id_user`, `password`, `nama_lengkap`, `email`, `no_telp`, `level`, `blokir`) VALUES
+('admin', '21232f297a57a5a743894a0e4a801fc3', 'Administrator', 'ghopurnomo@yahoo.com', '0821007676', 'admin', 'N'),
+('tu', '123456', 'Staff Tata Usaha', 'tata_usaha@yahoo.com', '0721773782', 'admin', 'N'),
+('user01', 'son76', 'Songhopur', 'songhopur@gmail.com', '02210008080', 'user', 'N'),
+('user02', 'cimada', 'Abdullah', 'aab_cimada@yahoo.com', '0852777766', 'user', 'N'),
+('user03', 'uchihasenju', 'Kartono Somplak', 'uchihasenjuno@yahoo.com', '0721773782', 'user', 'N');

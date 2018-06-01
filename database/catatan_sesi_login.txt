@@ -1,0 +1,35 @@
+>> LOGIN SESSION <<
+-------------------
+
+== 1. Sebagai Tata Usaha ==
+//-------------------
+username : abdullah
+password : cimada
+-------------------//
+//-------------------
+username : kartono
+password : tono_senju
+-------------------//
+//-------------------
+username : didi_p
+password : songhopur
+-------------------//
+//-------------------
+username : admin
+password : admin
+-------------------//
+##
+
+== 2. Sebagai Guru ==
+=- Note : [...] => Lihat data 
+//-------------------
+username : [NIP]
+password : [NIP]
+-------------------//
+
+== 3. Sebagai Siswa ==
+=- Note : [...] => Lihat data 
+//-------------------
+username : [NIS]
+password : [NIS]
+-------------------//
